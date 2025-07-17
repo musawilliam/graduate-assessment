@@ -28,8 +28,8 @@ Predefined Test Cases
 
 The application automatically runs 3 test cases:
 
-1. Sunny weather (Orbit1: 12 mm/h, Orbit2: 10 mm/h)
+- Sunny weather (Orbit1: 12 mm/h, Orbit2: 10 mm/h)
 
-2. Windy weather (Orbit1: 14 mm/h, Orbit2: 20 mm/h)
+- Windy weather (Orbit1: 14 mm/h, Orbit2: 20 mm/h)
 
-4. Rainy weather (Orbit1: 15 mm/h, Orbit2: 18 mm/h)
+- Rainy weather (Orbit1: 15 mm/h, Orbit2: 18 mm/h)
