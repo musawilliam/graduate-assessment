@@ -1,0 +1,14 @@
+C:\Users\WMRas\Documents\graduate-assessment\bin\Debug\net9.0\..exe
+C:\Users\WMRas\Documents\graduate-assessment\bin\Debug\net9.0\..deps.json
+C:\Users\WMRas\Documents\graduate-assessment\bin\Debug\net9.0\..runtimeconfig.json
+C:\Users\WMRas\Documents\graduate-assessment\bin\Debug\net9.0\..dll
+C:\Users\WMRas\Documents\graduate-assessment\bin\Debug\net9.0\..pdb
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\..GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\..AssemblyInfoInputs.cache
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\..AssemblyInfo.cs
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\..csproj.CoreCompileInputs.cache
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\..dll
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\refint\..dll
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\..pdb
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\..genruntimeconfig.cache
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\ref\..dll

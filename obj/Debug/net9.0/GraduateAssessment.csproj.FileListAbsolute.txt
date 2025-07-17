@@ -1,0 +1,14 @@
+C:\Users\WMRas\Documents\graduate-assessment\bin\Debug\net9.0\GraduateAssessment.exe
+C:\Users\WMRas\Documents\graduate-assessment\bin\Debug\net9.0\GraduateAssessment.deps.json
+C:\Users\WMRas\Documents\graduate-assessment\bin\Debug\net9.0\GraduateAssessment.runtimeconfig.json
+C:\Users\WMRas\Documents\graduate-assessment\bin\Debug\net9.0\GraduateAssessment.dll
+C:\Users\WMRas\Documents\graduate-assessment\bin\Debug\net9.0\GraduateAssessment.pdb
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\GraduateAssessment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\GraduateAssessment.AssemblyInfoInputs.cache
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\GraduateAssessment.AssemblyInfo.cs
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\GraduateAssessment.csproj.CoreCompileInputs.cache
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\GraduateAssessment.dll
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\refint\GraduateAssessment.dll
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\GraduateAssessment.pdb
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\GraduateAssessment.genruntimeconfig.cache
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\ref\GraduateAssessment.dll
