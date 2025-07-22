@@ -15,7 +15,7 @@ namespace GraduateAssessment
     public enum VehicleType
     {
         Bike,
-        Tuktuk,
+        TukTuk,
         Car
     }
 
@@ -38,7 +38,7 @@ namespace GraduateAssessment
             return weather switch
             {
                 WeatherCondition.Sunny => true,
-                WeatherCondition.Rainy => Type == VehicleType.Car || Type == VehicleType.Tuktuk,
+                WeatherCondition.Rainy => Type == VehicleType.Car || Type == VehicleType.TukTuk,
                 WeatherCondition.Windy => true,
                 _ => false
             };
@@ -102,7 +102,7 @@ namespace GraduateAssessment
             _vehicles = new List<Vehicle>
             {
                 new Vehicle(VehicleType.Bike, 10, 2),
-                new Vehicle(VehicleType.Tuktuk, 12, 1),
+                new Vehicle(VehicleType.TukTuk, 12, 1),
                 new Vehicle(VehicleType.Car, 20, 3)
             };
 
@@ -117,14 +117,14 @@ namespace GraduateAssessment
         {
             // Vehicle cannot exceed traffic speed
             int effectiveSpeed = Math.Min(vehicle.MaxSpeed, trafficSpeed);
-            
+
             // Calculate travel time in minutes
             double travelTimeMinutes = (double)orbit.Distance / effectiveSpeed * 60;
-            
+
             // Calculate crater crossing time
             int adjustedCraters = orbit.GetAdjustedCraters(weather);
             double craterTimeMinutes = adjustedCraters * vehicle.CraterCrossingTime;
-            
+
             return travelTimeMinutes + craterTimeMinutes;
         }
 
@@ -148,22 +148,22 @@ namespace GraduateAssessment
 
                     var trafficSpeed = trafficSpeeds[orbit.Number];
                     var totalTime = CalculateJourneyTime(vehicle, orbit, weather, trafficSpeed);
-                    
+
                     validCombinations.Add(new JourneyResult(vehicle, orbit, totalTime));
                 }
             }
 
             // Find minimum time
             var minTime = validCombinations.Min(c => c.TotalTimeMinutes);
-            
+
             // Get all combinations with minimum time
             var optimalCombinations = validCombinations
                 .Where(c => Math.Abs(c.TotalTimeMinutes - minTime) < 0.001)
                 .ToList();
 
             // If tie, prioritize: bike, tuktuk, car
-            var priorityOrder = new[] { VehicleType.Bike, VehicleType.Tuktuk, VehicleType.Car };
-            
+            var priorityOrder = new[] { VehicleType.Bike, VehicleType.TukTuk, VehicleType.Car };
+
             foreach (var vehicleType in priorityOrder)
             {
                 var result = optimalCombinations.FirstOrDefault(c => c.Vehicle.Type == vehicleType);
@@ -187,7 +187,7 @@ namespace GraduateAssessment
             Console.WriteLine("Input: Weather is Sunny");
             Console.WriteLine("Input: Orbit1 traffic speed is 12 megamiles/hour");
             Console.WriteLine("Input: Orbit2 traffic speed is 10 megamiles/hour");
-            
+
             var result1 = calculator.FindOptimalJourney(WeatherCondition.Sunny, 12, 10);
             Console.WriteLine($"Expected Output: {result1}");
             Console.WriteLine($"Total time: {result1.TotalTimeMinutes:F2} minutes");
@@ -198,7 +198,7 @@ namespace GraduateAssessment
             Console.WriteLine("Input: Weather is Windy");
             Console.WriteLine("Input: Orbit1 traffic speed is 14 megamiles/hour");
             Console.WriteLine("Input: Orbit2 traffic speed is 20 megamiles/hour");
-            
+
             var result2 = calculator.FindOptimalJourney(WeatherCondition.Windy, 14, 20);
             Console.WriteLine($"Expected Output: {result2}");
             Console.WriteLine($"Total time: {result2.TotalTimeMinutes:F2} minutes");
@@ -209,7 +209,7 @@ namespace GraduateAssessment
             Console.WriteLine("Input: Weather is Rainy");
             Console.WriteLine("Input: Orbit1 traffic speed is 15 megamiles/hour");
             Console.WriteLine("Input: Orbit2 traffic speed is 18 megamiles/hour");
-            
+
             var result3 = calculator.FindOptimalJourney(WeatherCondition.Rainy, 15, 18);
             Console.WriteLine($"Expected Output: {result3}");
             Console.WriteLine($"Total time: {result3.TotalTimeMinutes:F2} minutes");
@@ -228,7 +228,7 @@ namespace GraduateAssessment
                 {
                     Console.WriteLine("\nEnter weather condition (Sunny/Rainy/Windy) or 'quit' to exit:");
                     var weatherInput = Console.ReadLine()?.Trim();
-                    
+
                     if (weatherInput?.ToLower() == "quit")
                         break;
 

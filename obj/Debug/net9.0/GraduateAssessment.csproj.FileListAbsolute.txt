@@ -12,3 +12,4 @@ C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\refint\GraduateAss
 C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\GraduateAssessment.pdb
 C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\GraduateAssessment.genruntimeconfig.cache
 C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\ref\GraduateAssessment.dll
+C:\Users\WMRas\Documents\graduate-assessment\obj\Debug\net9.0\GraduateAssessment.sourcelink.json

@@ -1,35 +1,30 @@
 # King Shan's Journey Optimizer
 
-This application helps King Shan choose the fastest route and vehicle combination to travel from Silk Dorb to Hallitharam, considering weather conditions and traffic speeds.
+## Overview
+**King Shan's Journey Optimizer** is a .NET console application that calculates the fastest route for King Shan to travel from Silk Dorb to Hallitharam, considering different weather conditions, traffic speed, and vehicle types. The program calculates and outputs the optimal vehicle-orbit combination for each journey based on input criteria.
 
 ## Features
-- Calculates optimal vehicle-orbit combination based on:
-  - Weather conditions (Sunny, Rainy, Windy)
-  - Orbit traffic speeds
-  - Vehicle capabilities and constraints
-- Handles tie-breakers according to specified priority rules
-- Interactive mode for custom inputs
-- Predefined test cases for verification
+- **Weather-Based Adjustments**: Adjusts the number of craters on each orbit based on the weather (Sunny, Rainy, Windy).
+- **Optimal Journey Calculation**: Determines the best vehicle-orbit combination for the fastest journey considering traffic speed, vehicle speed, and crater-crossing time.
+- **Interactive Mode**: Allows users to input custom weather and traffic speeds to calculate the optimal journey.
+- **Predefined Test Cases**: Automatically runs three test cases with predefined weather and traffic speeds to verify correct functionality.
 
-## Requirements
-- [.NET 9.0 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
+## Weather Conditions
+- **Sunny**: Reduces craters by 10% (All vehicles are allowed).
+- **Rainy**: Increases craters by 20% (Car and TukTuk only).
+- **Windy**: No change to the craters (All vehicles are allowed).
 
-## Getting Started
-1. Clone the repository
-2. Navigate to project directory:
-```bash
-cd GraduateAssessment
+## Vehicle Types
+- **Bike**: 10 megamiles/hour, 2 minutes per crater.
+- **TukTuk**: 12 megamiles/hour, 1 minute per crater.
+- **Car**: 20 megamiles/hour, 3 minutes per crater.
 
-## Run the application:
-1. dotnet run
+## Installation
 
-## Usage
-Predefined Test Cases
+### Requirements
+- .NET 9.0 SDK [Download .NET 9.0 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
 
-The application automatically runs 3 test cases:
-
-1. Sunny weather (Orbit1: 12 mm/h, Orbit2: 10 mm/h)
-
-2. Windy weather (Orbit1: 14 mm/h, Orbit2: 20 mm/h)
-
-3. Rainy weather (Orbit1: 15 mm/h, Orbit2: 18 mm/h)
+### Getting Started
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/King-Shans-Journey-Optimizer.git
